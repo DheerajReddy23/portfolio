@@ -1,0 +1,22 @@
+/*#bgVideo{
+    position: relative;
+    width:100vw;
+    height:98vh;
+    right:0;
+    bottom:0;
+}*/
+.director{
+    position:relative;
+    height: 100vh;
+    display: inline-block;
+   /* align-items: flex-start;
+    text-align: center;
+    justify-content: center;*/
+    height:auto;
+    width:auto;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-family: sans-serif;
+    color: white;
+    mix-blend-mode: screen;
+}
