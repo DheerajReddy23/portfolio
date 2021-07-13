@@ -7,38 +7,70 @@
         <link rel="stylesheet" href="video.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
-            video{
+           .home{
+                    background-image: url('bg3.jpg') ;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    -webkit-background-size:cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                        height: 100vh;
+                }
+                .director h2{
+                    font-size: 2rem;
+                    letter-spacing: 0.6rem;
+                    color: white;
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    padding-bottom: 16px;
+                }
+                .director h4{
+                    font-size: 1rem;
+                    letter-spacing: 0.4rem;
+                    color: white;
+                   padding-left: 30px;
+                    padding-bottom:16px;
+                }
+                video{
                 object-fit: cover;
-                height: 100vh;
+               height: 100vh;
                 width: 100vw;
                 position: fixed;
                 top:0;
                 left: 0;
-            }
-            .id{
-                display: inline-block;
+                }
+            #button{
+                display: flex;
+                flex: 2;
                 position: absolute;
-                padding-left: 30px;
-                padding-right: 30px;
+                background-color: lightgray; 
+                color: black;
+                margin-left: 2rem;
+                padding-left: 15px;
+                padding-right: 15px;
                 padding-top: 2px;
                 padding-bottom: 2px;
-            background-color: lightgray; 
-                color: black;
+            }
+            .director a{
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
-        <video playsinline autoplay muted loop poster="poster.jpg" id="bgvideo">
-            <source src="E:\porfolio\footage.mp4" type="video/mp4">
-        </video>
-        <header class="director">
-            <h2>D H E E R A J  R E D D Y</h2>
-            <br>
-            <br>
-            <p>S T U D E N T</p>
-            <p>F R O N T - E N D  D E V</p>
-            <br>
-            <input type="button" value=" DIVE IN " id="bt" onclick="window.location.href='C:\Users\dheer\OneDrive\Documents\portfolio\about.html'">
+        
+        <header class="home">
+            <video playsinline autoplay muted loop poster="poster.jpg" id="bgvideo">
+                <source src="E:\porfolio\footage.mp4" type="video/mp4">
+            </video>
+            <div class="director">
+                <h2>D H E E R A J  R E D D Y</h2>
+                <h4>S T U D E N T</h4>
+                <h4>F R O N T - E N D  D E V</h4>
+                <br>
+                <a href="C:\Users\dheer\OneDrive\Documents\portfolio\about.html" id="button">DIVE IN</a>
+            </div>
         </header>
     </body>
 </html>
